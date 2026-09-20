@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>籃球技巧初級實戰班 | 報名諮詢</title>
+    <style>
+        :root { --primary-color: #e65100; --primary-hover: #ef6c00; --secondary-color: #263238; --bg-color: #f8f9fa; --card-bg: #ffffff; --text-color: #37474f; --border-color: #e0e0e0; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        .container { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+        
+        header.nav-header { background-color: #ffffff; border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+        .logo { font-size: 1.25rem; font-weight: 700; color: var(--secondary-color); text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; gap: 20px; }
+        .nav-menu a { text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .nav-menu a:hover, .nav-menu a.active { color: var(--primary-color); }
+
+        .page-header { background-color: var(--secondary-color); color: #ffffff; padding: 50px 0; text-align: center; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 10px; }
+        
+        section { padding: 50px 0; }
+        .form-card { max-width: 600px; margin: 0 auto; background: var(--card-bg); padding: 30px; border-radius: 8px; border: 1px solid var(--border-color); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 10px; border: 1px solid var(--border-color); border-radius: 4px; font-size: 1rem; }
+        .btn-submit { width: 100%; background-color: var(--primary-color); color: white; padding: 12px; border: none; border-radius: 4px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: background-color 0.2s; }
+        .btn-submit:hover { background-color: var(--primary-hover); }
+
+        footer { background-color: var(--secondary-color); color: #b0bec5; text-align: center; padding: 25px 0; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">籃球技巧初級實戰班</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="courses.html">課程介紹</a></li>
+                    <li><a href="about.html">師資團隊</a></li>
+                    <li><a href="gallery.html">課堂花絮</a></li>
+                    <li><a href="contact.html" class="active">報名諮詢</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>報名與課程諮詢</h1>
+            <p>填寫下表，我們將主動與您聯繫說明課程細節</p>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="form-card">
+                <form onsubmit="event.preventDefault(); alert('感謝您的提交！我們將儘速與您聯繫。');">
+                    <div class="form-group">
+                        <label for="name">姓名</label>
+                        <input type="text" id="name" required placeholder="請輸入姓名">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">聯絡電話</label>
+                        <input type="tel" id="phone" required placeholder="例如：0912345678">
+                    </div>
+                    <div class="form-group">
+                        <label for="level">個人運動經驗</label>
+                        <select id="level">
+                            <option value="zero">完全零基礎/沒接觸過籃球</option>
+                            <option value="basic">很久沒打球/稍微知道規則</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">想詢問的問題 (選填)</label>
+                        <textarea id="message" rows="4" placeholder="例如：想了解上課地點與開課時間..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">送出諮詢</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 籃球技巧初級實戰班 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

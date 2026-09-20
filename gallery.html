@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>籃球技巧初級實戰班 | 課堂花絮</title>
+    <style>
+        :root { --primary-color: #e65100; --secondary-color: #263238; --bg-color: #f8f9fa; --card-bg: #ffffff; --text-color: #37474f; --border-color: #e0e0e0; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        .container { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+        
+        header.nav-header { background-color: #ffffff; border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+        .logo { font-size: 1.25rem; font-weight: 700; color: var(--secondary-color); text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; gap: 20px; }
+        .nav-menu a { text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .nav-menu a:hover, .nav-menu a.active { color: var(--primary-color); }
+
+        .page-header { background-color: var(--secondary-color); color: #ffffff; padding: 50px 0; text-align: center; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 10px; }
+        
+        section { padding: 50px 0; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .gallery-item { background: #eceff1; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #78909c; font-weight: 600; border: 1px solid var(--border-color); }
+
+        footer { background-color: var(--secondary-color); color: #b0bec5; text-align: center; padding: 25px 0; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">籃球技巧初級實戰班</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="courses.html">課程介紹</a></li>
+                    <li><a href="about.html">師資團隊</a></li>
+                    <li><a href="gallery.html" class="active">課堂花絮</a></li>
+                    <li><a href="contact.html">報名諮詢</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>課堂精彩花絮</h1>
+            <p>紀錄每一次練習的進步與歡樂氛圍</p>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="gallery-grid">
+                <div class="gallery-item">運球基本練習對抗</div>
+                <div class="gallery-item">教練 1 對 1 投籃姿勢微調</div>
+                <div class="gallery-item">學員小組規則實戰練習</div>
+                <div class="gallery-item">課後熱烈討論與觀念檢討</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 籃球技巧初級實戰班 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>籃球技巧初級實戰班 | 師資團隊</title>
+    <style>
+        :root { --primary-color: #e65100; --secondary-color: #263238; --bg-color: #f8f9fa; --card-bg: #ffffff; --text-color: #37474f; --border-color: #e0e0e0; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+        .container { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+        
+        header.nav-header { background-color: #ffffff; border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+        .logo { font-size: 1.25rem; font-weight: 700; color: var(--secondary-color); text-decoration: none; }
+        .nav-menu { display: flex; list-style: none; gap: 20px; }
+        .nav-menu a { text-decoration: none; color: var(--text-color); font-weight: 500; }
+        .nav-menu a:hover, .nav-menu a.active { color: var(--primary-color); }
+
+        .page-header { background-color: var(--secondary-color); color: #ffffff; padding: 50px 0; text-align: center; }
+        .page-header h1 { font-size: 2rem; margin-bottom: 10px; }
+        
+        section { padding: 50px 0; }
+        .coach-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+        .coach-card { background: var(--card-bg); padding: 25px; border-radius: 8px; border: 1px solid var(--border-color); text-align: center; }
+        .coach-card h3 { color: var(--secondary-color); margin-bottom: 5px; }
+        .coach-card .role { color: var(--primary-color); font-weight: 600; margin-bottom: 15px; font-size: 0.9rem; }
+        .coach-card p { text-align: left; font-size: 0.95rem; color: #546e7a; }
+
+        footer { background-color: var(--secondary-color); color: #b0bec5; text-align: center; padding: 25px 0; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header class="nav-header">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">籃球技巧初級實戰班</a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="courses.html">課程介紹</a></li>
+                    <li><a href="about.html" class="active">師資團隊</a></li>
+                    <li><a href="gallery.html">課堂花絮</a></li>
+                    <li><a href="contact.html">報名諮詢</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>專業友善的教練團隊</h1>
+            <p>注重新手發揮與動作微調，陪伴你安心從零開始練習</p>
+        </div>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="coach-grid">
+                <div class="coach-card">
+                    <h3>陳教練</h3>
+                    <div class="role">總教練 / 初學者教學專家</div>
+                    <p>具備 8 年成人基礎教學經驗，精準掌握動作拆解技巧，擅長以親切的方式引導零基礎學員建立信心。</p>
+                </div>
+                <div class="coach-card">
+                    <h3>張教練</h3>
+                    <p class="role">體能與姿勢矯正教練</p>
+                    <p>專攻投籃機制微調與防傷發力，協助學生以最省力且正確的方式練習運動基礎。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 籃球技巧初級實戰班 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
